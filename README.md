@@ -506,6 +506,20 @@ Playbooks are one of the core features of Ansible and tell Ansible what to execu
 · acl.yaml
 · webserver.yaml
 ```
+## Python Environment and Download pyATS
+```bash
+devasc@labvm:~/Desktop/network_automation/pyats$ python3 -m venv pyats
+devasc@labvm:~/Desktop/network_automation/pyats$ source bin/activate
+(pyats) devasc@labvm:~/Desktop/network_automation/pyats$
+```
+Install pyATS using pip3. This will take a few minutes. During installation you may see some errors. These can usually be ignored as long as pyATS can be verified as shown in the next step.
+```bash
+(pyats) devasc@labvm:~/Desktop/network_automation/pyats$ pip3 install pyats[full]
+Collecting pyats[full]
+  Downloading pyats-20.4-cp38-cp38-manylinux1_x86_64.whl (2.0 MB)
+
+<output omitted>
+```
 ## Use pyATS to test the network
 pyATS is an Automation framework developed by cisco which has a module named genie parser contains most of the output parsing and processing.
 #### List of pyATS YAML in this Case Study
