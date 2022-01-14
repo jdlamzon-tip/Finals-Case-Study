@@ -455,7 +455,7 @@ ansible_become_method=enable
 ansible_become_pass=cisco123
 
 [ubuntu]
-ubutnu_server ansible_host=192.168.2.3 
+ubuntu_server ansible_host=192.168.2.3 
 
 [ubuntu:vars]
 ansible_ssh_pass=cisco123 
