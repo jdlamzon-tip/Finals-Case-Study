@@ -1,0 +1,34 @@
+{
+  "_exclude": [
+    "system_restarted_at",
+    "uptime_this_cp",
+    "uptime"
+  ],
+  "version": {
+    "chassis": "3725",
+    "chassis_sn": "FTX0945W0MY",
+    "compiled_by": "prod_rel_team",
+    "compiled_date": "Tue 17-Aug-10 12:08",
+    "curr_config_register": "0x2102",
+    "hostname": "R1",
+    "image_id": "C3725-ADVENTERPRISEK9-M",
+    "image_type": "production image",
+    "label": "RELEASE SOFTWARE (fc2)",
+    "main_mem": "124928",
+    "number_of_intfs": {
+      "FastEthernet": "3",
+      "Serial": "4",
+      "Serial(sync/async)": "3"
+    },
+    "os": "IOS",
+    "platform": "3700",
+    "processor_board_flash": "55K",
+    "processor_type": "R7000",
+    "rom": "3700 Software (C3725-ADVENTERPRISEK9-M), Version 12.4(15)T14, RELEASE SOFTWARE (fc2)",
+    "rtr_type": "3725",
+    "system_image": "tftp://255.255.255.255/unknown",
+    "uptime": "7 hours, 1 minute",
+    "version": "12.4(15)T14",
+    "version_short": "12.4"
+  }
+}

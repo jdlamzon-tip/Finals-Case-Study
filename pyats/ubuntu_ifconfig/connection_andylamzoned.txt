@@ -1,0 +1,54 @@
+
+2022-01-14 13:31:03,965: %UNICON-INFO: +++ andylamzoned logfile ubuntu_ifconfig/connection_andylamzoned.txt +++
+
+2022-01-14 13:31:03,965: %UNICON-INFO: +++ Unicon plugin linux +++
+
+2022-01-14 13:31:03,970: %UNICON-INFO: +++ connection to spawn: ssh -l andylamzoned 192.168.2.3, id: 140469557641856 +++
+
+2022-01-14 13:31:03,972: %UNICON-INFO: connection to andylamzoned
+Warning: Permanently added '192.168.2.3' (ECDSA) to the list of known hosts.
+andylamzoned@192.168.2.3's password: 
+Welcome to Ubuntu 20.04.3 LTS (GNU/Linux 5.11.0-44-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+0 updates can be applied immediately.
+
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+Your Hardware Enablement Stack (HWE) is supported until April 2025.
+Last login: Fri Jan 14 20:17:52 2022 from 192.168.1.2
+andylamzoned@andylamzoned-VirtualBox:~$ 
+
+2022-01-14 13:31:04,831: %UNICON-INFO: +++ initializing handle +++
+
+2022-01-14 13:31:05,605: %UNICON-INFO: +++ andylamzoned with via 'cli': executing command 'ifconfig' +++
+ifconfig
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.2.3  netmask 255.255.255.0  broadcast 192.168.2.255
+        inet6 fe80::a00:27ff:fe2c:4f95  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:2c:4f:95  txqueuelen 1000  (Ethernet)
+        RX packets 3946  bytes 3419497 (3.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 3298  bytes 387063 (387.0 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s8: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 08:00:27:d8:14:71  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 75822  bytes 5482589 (5.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 75822  bytes 5482589 (5.4 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+andylamzoned@andylamzoned-VirtualBox:~$ 

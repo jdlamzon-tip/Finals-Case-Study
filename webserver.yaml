@@ -1,0 +1,55 @@
+---
+- name: Installing Apache2 and Updating the Firewall
+  hosts: ubuntu
+
+  tasks:
+  - name: Install Apache
+    apt:
+      name: apache2
+      state: present
+
+  - name: Start apache2 service
+    service:
+      name: apache2
+      state: started
+      enabled: yes
+
+  - name: Allow all access to TCP Port 80
+    ufw:
+      rule: allow
+      port: '80'
+      proto: tcp
+
+  - name: Enabled Firewall
+    ufw:
+      state: enabled
+
+- name: Creating a virtual host in the website
+  hosts: ubuntu
+
+  tasks:
+  - name: html test file
+    copy:
+      src: ./body.html
+      dest: /var/www/html/index.html
+      owner: root
+      group: root
+      mode: '0644'
+    register: index
+
+  - name: start webservice
+    service:
+      name: apache2
+      state: restarted
+      enabled: yes
+    when: index.changed
+
+  - name: Allow access to tcp port 80
+    ufw:
+      rule: allow
+      port: '80'
+      proto: tcp
+
+  - name: reload ufw
+    ufw:
+      state: reloaded

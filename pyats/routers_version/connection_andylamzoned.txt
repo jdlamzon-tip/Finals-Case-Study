@@ -1,0 +1,25 @@
+
+2022-01-14 13:34:48,606: %UNICON-INFO: +++ andylamzoned logfile routers_version/connection_andylamzoned.txt +++
+
+2022-01-14 13:34:48,607: %UNICON-INFO: +++ Unicon plugin linux +++
+
+2022-01-14 13:34:48,611: %UNICON-INFO: +++ connection to spawn: ssh -l andylamzoned 192.168.2.3, id: 139704579383936 +++
+
+2022-01-14 13:34:48,612: %UNICON-INFO: connection to andylamzoned
+Warning: Permanently added '192.168.2.3' (ECDSA) to the list of known hosts.
+andylamzoned@192.168.2.3's password: 
+Welcome to Ubuntu 20.04.3 LTS (GNU/Linux 5.11.0-44-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+0 updates can be applied immediately.
+
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+Your Hardware Enablement Stack (HWE) is supported until April 2025.
+Last login: Fri Jan 14 21:31:03 2022 from 192.168.1.2
+andylamzoned@andylamzoned-VirtualBox:~$ 
+
+2022-01-14 13:34:49,368: %UNICON-INFO: +++ initializing handle +++

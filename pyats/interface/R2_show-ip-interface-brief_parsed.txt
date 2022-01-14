@@ -1,0 +1,78 @@
+{
+  "_exclude": [
+    "method",
+    "(Tunnel.*)"
+  ],
+  "interface": {
+    "FastEthernet0/0": {
+      "interface_is_ok": "YES",
+      "ip_address": "192.168.2.1",
+      "method": "NVRAM",
+      "protocol": "up",
+      "status": "up"
+    },
+    "FastEthernet0/1": {
+      "interface_is_ok": "YES",
+      "ip_address": "192.168.47.134",
+      "method": "DHCP",
+      "protocol": "up",
+      "status": "up"
+    },
+    "FastEthernet1/0": {
+      "interface_is_ok": "YES",
+      "ip_address": "unassigned",
+      "method": "NVRAM",
+      "protocol": "down",
+      "status": "administratively down"
+    },
+    "Serial0/0": {
+      "interface_is_ok": "YES",
+      "ip_address": "10.0.0.2",
+      "method": "NVRAM",
+      "protocol": "up",
+      "status": "up"
+    },
+    "Serial0/1": {
+      "interface_is_ok": "YES",
+      "ip_address": "unassigned",
+      "method": "NVRAM",
+      "protocol": "down",
+      "status": "administratively down"
+    },
+    "Serial0/2": {
+      "interface_is_ok": "YES",
+      "ip_address": "unassigned",
+      "method": "NVRAM",
+      "protocol": "down",
+      "status": "administratively down"
+    },
+    "Serial2/0": {
+      "interface_is_ok": "YES",
+      "ip_address": "unassigned",
+      "method": "NVRAM",
+      "protocol": "down",
+      "status": "administratively down"
+    },
+    "Serial2/1": {
+      "interface_is_ok": "YES",
+      "ip_address": "unassigned",
+      "method": "NVRAM",
+      "protocol": "down",
+      "status": "administratively down"
+    },
+    "Serial2/2": {
+      "interface_is_ok": "YES",
+      "ip_address": "unassigned",
+      "method": "NVRAM",
+      "protocol": "down",
+      "status": "administratively down"
+    },
+    "Serial2/3": {
+      "interface_is_ok": "YES",
+      "ip_address": "unassigned",
+      "method": "NVRAM",
+      "protocol": "down",
+      "status": "administratively down"
+    }
+  }
+}
